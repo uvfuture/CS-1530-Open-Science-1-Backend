@@ -1,0 +1,9 @@
+cs1530\osgfreesurfer\Application.class
+cs1530\osgfreesurfer\services\UserServiceBean.class
+cs1530\osgfreesurfer\services\JobService.class
+cs1530\osgfreesurfer\services\UserService.class
+cs1530\osgfreesurfer\controllers\user\UserController.class
+cs1530\osgfreesurfer\routes\Job.class
+cs1530\osgfreesurfer\routes\JobList.class
+cs1530\osgfreesurfer\routes\User.class
+cs1530\osgfreesurfer\routes\UserList.class

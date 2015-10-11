@@ -1,0 +1,98 @@
+//vars
+//colors
+$white:             #FFFFFF;
+$black:             #000000;
+$gray-50:           #FAFAFA;
+$gray-100:          #F5F5F5;
+$gray-300:          #E0E0E0;
+$gray-400:          #BDBDBD;
+$gray-900:          #212121;
+$orange-50:         #fff3e0;
+$orange-100:        #ffe0b2;
+$orange-300:        #ffb74d;
+$orange-400:        #ffa726;
+$orange-900:        #e65100;
+//mixins
+@mixin border-radius($radius) {
+    webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin box-shadow($shadow) {
+    webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin background-font-color($background-color, $font-color) {
+    background-color: $background-color;
+    color: $font-color;
+}
+.main {
+   padding: 0.5% 5%;
+}
+.inner {
+    @include background-font-color($gray-300, $gray-900);
+    @include box-shadow(0 2px 3px $gray-400);
+    padding: 5%;
+}
+.content {
+    @include background-font-color($gray-100, $gray-900);
+    @include box-shadow(0 2px 3px $gray-400);
+    padding: 5%;
+}
+.btn {
+    @include border-radius(0);
+}
+.orange {
+    background-color: $orange-400;
+    color: $gray-50;
+}
+.white {
+    background-color: $gray-50;
+    color: $orange-400;
+}
+//header
+header {
+    @include background-font-color($orange-400, $gray-50);
+    border-bottom: 1px solid $orange-900;
+    a, a:link, a:visited, a:active {
+        color: $gray-50;
+        text-decoration: none;
+    }
+}
+.small {
+
+}
+.large {
+    padding: 2%;
+    h1 {
+        text-align: center;
+        font-size: 400%;
+    }
+}
+//login
+#login {
+
+}
+//logout
+#logout {
+    margin-top: 2%;
+    button {
+        display: block;
+        margin: auto;
+    }
+}
+//about
+#about {
+
+}
+//profile
+#profile {
+
+}
+//error
+#error {
+
+}
